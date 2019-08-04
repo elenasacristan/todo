@@ -26,7 +26,7 @@ SECRET_KEY = 'gtuzysp*mboqfapwr-h#bbocn3xbw@j-2yd@m3)gzw_iujtep)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [simple-django-elena2.herokuapp.com]
 
 
 # Application definition
