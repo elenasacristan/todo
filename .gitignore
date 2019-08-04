@@ -1,0 +1,6 @@
+
+.venv
+.vscode
+htmlcov
+notes.txt
+.coverage
