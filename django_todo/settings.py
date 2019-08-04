@@ -26,7 +26,7 @@ SECRET_KEY = 'gtuzysp*mboqfapwr-h#bbocn3xbw@j-2yd@m3)gzw_iujtep)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['simple-django-elena2.herokuapp.com']
+ALLOWED_HOSTS = [os.environ.get('HOSTNAME')]
 
 
 # Application definition
@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse("postgres://wfhqgyenbrjihj:fa5ca9241dd0fb050a3eb7086e85133cc6bec1be95f0dd4039c42e36bbc351ac@ec2-54-228-246-214.eu-west-1.compute.amazonaws.com:5432/d6lhp1sic5nve7")
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
 
